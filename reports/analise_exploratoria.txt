@@ -1,0 +1,56 @@
+RELATÓRIO DE ANÁLISE EXPLORATÓRIA
+==================================================
+
+1. VISÃO GERAL DOS DADOS
+- Número de registros: 65886
+- Número de características: 34
+- Colunas: provider_name, address_1, address_2, city, state, zip, public_phone, latitude, longitude, geopoint, last_report_date, is_pap_site, prescribing_services_available, appointment_url, home_delivery, is_icatt_site, has_usg_product, has_commercial_product, has_paxlovid, has_commercial_paxlovid, has_usg_paxlovid, has_lagevrio, has_commercial_lagevrio, has_usg_lagevrio, has_veklury, has_oseltamivir_generic, has_oseltamivir_suspension, has_oseltamivir_tamiflu, has_baloxavir, has_zanamivir, has_peramivir, grantee_code, is_flu, is_covid-19
+
+2. ANÁLISE DE VALORES NULOS
+provider_name                         0
+address_1                             2
+address_2                         58513
+city                                  2
+state                                 2
+zip                                   2
+public_phone                      45402
+latitude                              0
+longitude                             0
+geopoint                              0
+last_report_date                      1
+is_pap_site                           0
+prescribing_services_available    65023
+appointment_url                   65425
+home_delivery                         0
+is_icatt_site                         0
+has_usg_product                       0
+has_commercial_product                0
+has_paxlovid                          0
+has_commercial_paxlovid               0
+has_usg_paxlovid                      0
+has_lagevrio                          0
+has_commercial_lagevrio               0
+has_usg_lagevrio                      0
+has_veklury                           0
+has_oseltamivir_generic               0
+has_oseltamivir_suspension            0
+has_oseltamivir_tamiflu               0
+has_baloxavir                         0
+has_zanamivir                         0
+has_peramivir                         0
+grantee_code                      20521
+is_flu                                0
+is_covid-19                           0
+
+
+3. ESTATÍSTICAS DESCRITIVAS
+           latitude     longitude
+count  65886.000000  65886.000000
+mean      36.993125    -89.934031
+std        5.600528     16.018803
+min       13.475204   -165.377908
+25%       33.636172    -96.800954
+50%       37.988193    -85.301984
+75%       40.866793    -78.828246
+max       64.856378    145.728316
+

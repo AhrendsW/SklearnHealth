@@ -22,7 +22,10 @@ SklearnHealth/
 │   └── visualization/# Scripts para visualização de dados
 │
 ├── models/           # Modelos treinados salvos
-├── notebooks/        # Jupyter notebooks para análise exploratória
+├── reports/         # Relatórios gerados
+│   ├── figures/     # Visualizações e gráficos
+│   └── *.txt        # Relatórios em texto
+├── main.py          # Script principal do projeto
 └── requirements.txt  # Dependências do projeto
 ```
 
@@ -48,13 +51,24 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Download dos Dados
+## Executando o Projeto
 
-Para baixar os dados do projeto, execute:
+Para executar o pipeline completo do projeto, simplesmente rode:
 
 ```bash
-python src/data/download_data.py
+python main.py
 ```
+
+Este comando irá:
+1. Baixar os dados necessários
+2. Realizar análise exploratória
+3. Gerar visualizações e relatórios
+4. (Futuro) Treinar e avaliar modelos
+
+Os resultados serão salvos em:
+- `reports/figures/`: Visualizações e gráficos
+- `reports/analise_exploratoria.txt`: Relatório detalhado da análise
+- `pipeline.log`: Log de execução do pipeline
 
 ## Tecnologias Utilizadas
 
